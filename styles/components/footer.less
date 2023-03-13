@@ -38,7 +38,6 @@
     }
 
     &__social {
-        /*padding: 0 30px 3.86px 30px;*/
         padding: 0 0 3.86px 0;
         max-width: 370px;
         text-align: center;
@@ -57,11 +56,12 @@
     }
 
     &__social-logos {
+        max-width: 169px;
         display: flex;
-        padding: 0 100px;
+        justify-content: space-between;
 
-        a:nth-child(2) {
-            padding: 0 26px;
+        a:hover {
+            box-shadow: 0 4px 30px @coral-logo-social-hover-color;
         }
     }
 
