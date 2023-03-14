@@ -1,11 +1,14 @@
 .footer {
     max-width: 100%;
-    background: @rhino-background-color;
 
-    &__base {
-        padding: 71.14px 0 67.14px 0;
+    &__wrapper-top {
+        background: @rhino-background-color;    
+    }
+
+    &__wrapper-base {
         display: flex;
         justify-content: space-between;
+        padding: 71.14px 0 67.14px 0;
     }
 
     &__location {
@@ -93,8 +96,16 @@
         }
     }
 
-    &__copyright {
+    &__wrapper-bottom {
         background: @martinique-background-color;
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+    }
+
+    &__wrapper-copyright {
         text-align: center;
     }
 
