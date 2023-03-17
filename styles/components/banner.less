@@ -14,6 +14,7 @@
             font-weight: 900;
             font-size: 64px;
             line-height: 75px;
+            text-transform: uppercase;
             color: @white-text-color;
         }
     }    
@@ -36,12 +37,23 @@
         button {
             width: 369px;
             height: 77.58px;
-            background: @coral-background-color;
+            background: @coral-button-normal-color;
             font-weight: 900;
             font-size: 24px;
             line-height: 28px;
+            text-transform: uppercase;
             color: @white-text-color;
             border: none;
+            cursor: pointer;
+
+            &:hover {
+                background: @crimson-button-hover-color;
+            }
+
+            &:active {
+                background: @coral-button-activ-color;
+                box-shadow: 4px 4px 30px @coral-button-activ-color;
+            }
         }
     }
 }
