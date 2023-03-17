@@ -1,0 +1,47 @@
+.features {
+
+    &__wrapper {
+        padding: 116px 0 133.57px 0;
+    }
+
+    &__cards {
+        display: flex;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 2fr);
+        gap: 71px 30px;
+    }
+    
+    &__card {
+        width: 370px;
+        height: 305.43px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    &__card-icon {
+        margin: 0 auto;
+    }
+    
+    &__card-title {
+        margin: 29px 0 20.43px 0;
+    
+        h4 {
+            padding: 22px 0;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 28px;
+            color: @shark-text-color;
+        }
+    }
+    
+    &__card-text {
+
+        h5 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: @nevada-text-color;
+        }
+    }
+}
