@@ -1,8 +1,4 @@
 .work {
-
-    .container {
-        max-width: 100%;
-    }
     
     &__project-card {
         display: grid;
@@ -56,12 +52,73 @@
             }
 
             h5 {
-                margin-top: 20.57px;
+                margin-top: 21px;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
                 text-align: center;
                 color: @white-text-color; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .work {
+        .project-card {
+            &__text {
+
+                h4 {
+                    padding: 10px 0;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+    
+                h5 {
+                    margin-top: 13px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .work {
+        &__project-card {
+            grid-template: repeat(4, 2fr) / repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width:345px) {
+    .work {
+        .project-card {
+            &__text {
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .work {
+        .project-card {
+            &__text {
+
+                h4 {
+                    padding: 2px 0;
+                }
+    
+                h5 {
+                    margin-top: 5px;
+                }
             }
         }
     }
