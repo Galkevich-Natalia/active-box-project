@@ -8,17 +8,18 @@
     &__wrapper-base {
         display: flex;
         justify-content: space-between;
-        padding: 71.14px 0 67.14px 0;
+        align-items: center;
+        padding: 71px 0 67px 0;
     }
 
     &__location {
-        padding: 0 0 41.72px 0;
+        padding: 0 0 42px 0;
         max-width: 370px;
         text-align: center;
     }
 
     &__location-title {
-        padding: 0 0 29px 0;
+        padding-bottom: 29px;
 
         h5 {
             font-weight: 700;
@@ -41,13 +42,14 @@
     }
 
     &__social {
-        padding: 0 0 3.86px 0;
+        padding: 0 0 4px 0;
+        margin: 0 30px;
         max-width: 370px;
         text-align: center;
     }
 
     &__social-title {
-        padding-bottom: 48.86px;
+        padding-bottom: 49px;
 
         h5 {
             font-weight: 700;
@@ -66,6 +68,11 @@
         a:hover {
             box-shadow: 0 4px 30px @coral-logo-social-hover-color;
         }
+
+        img {
+            max-width: 39px;
+            max-height: 39px;
+        }
     }
 
     &__about {
@@ -74,7 +81,7 @@
     }
 
     &__about-title {
-        padding: 0 0 28.71px 0;
+        padding-bottom: 29px;
 
         h5 {
             font-weight: 700;
@@ -110,7 +117,7 @@
     }
 
     &__copyright-text {
-        padding: 23.86px 0 24.14px 0;
+        padding: 24px 0;
         max-width: 370px; 
         margin: 0 auto;
 
@@ -125,5 +132,129 @@
 
     &__copyright-text-by {
         color: @white-text-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        &__wrapper-base {
+            padding: 47px 0 43px 0;
+        }
+    
+        &__location {
+            padding: 0;
+            max-width: 315px;
+        }
+    
+        &__location-title {
+            padding-bottom: 18px;
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    
+        &__location-address {
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    
+        &__social {
+            padding: 0;
+            margin: 0 30px;
+            max-width: 315px;
+        }
+    
+        &__social-title {
+            padding-bottom: 33px;
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    
+        &__social-logos {
+            max-width: 145px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            img {
+                max-width: 33px;
+                max-height: 33px;
+            }
+        }
+    
+        &__about {
+            max-width: 315px;
+        }
+    
+        &__about-title {
+            padding-bottom: 16px;
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    
+        &__about-description {
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    
+        &__wrapper-copyright {
+            text-align: center;
+        }
+    
+        &__copyright-text {
+            padding: 14px 0;
+            max-width: 315px; 
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .footer {
+        &__wrapper-base {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        &__wrapper-base {
+            padding: 33px 0;
+            display: grid;
+            grid-template-columns: repeat(1, 3fr);
+            row-gap: 65px;
+        }
+
+        &__location {
+            margin: 0 auto;
+        }
+
+        &__social {
+            margin: 0 auto;
+        }
+
+        &__about {
+            margin: 0 auto;
+        }
+    
+        &__copyright-text {
+            padding: 29px 0;
+            max-width: 280px; 
+        }
     }
 }

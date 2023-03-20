@@ -26,7 +26,7 @@
     }
     
     &__citation {
-        max-width: 497px;
+        max-width: 470px;
         padding: 17px 0;
 
         h2 {
@@ -44,7 +44,7 @@
     
     &__author {
 
-        max-width: 497px;
+        max-width: 470px;
         padding: 7px 0;
 
         h6 {
@@ -83,5 +83,136 @@
 
     &__button-container .radio:checked + label::before {
         background: @falcon-dots-color;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .testimonials {
+        
+        &__text {
+            padding: 0 10px 0 100px;
+        }
+
+        &__citation {
+    
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .testimonials {
+        &__slider {
+            max-height: 332px;
+            width: 100%;
+        }
+        
+        &__image-wrapper {
+            max-width: 502px;
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__text {
+            padding: 0 10px 0 88px;
+        }
+        
+        &__citation {
+            max-width: 330px;
+            padding: 14px 0;
+            h2 {
+
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        
+        &__author {
+            max-width: 330px;
+            padding: 3px 0;
+    
+            h6 {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__button-container {
+            padding-top: 24px;
+            max-width: 145px;
+        }
+    
+        &__button-container .radio + label::before {
+            width: 9px;
+            height: 9px;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .testimonials {
+
+        &__image-wrapper {
+            max-width: 470px;
+        }
+
+        &__text {
+            padding: 0 10px 0 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .testimonials {
+        &__citation {
+            max-width: 330px;
+            padding: 14px 0;
+            h2 {
+
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+         &__author {
+            max-width: 330px;
+            padding: 3px 0;
+    
+            h6 {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .testimonials {
+
+        &__slider {
+            display: flex;
+            flex-direction: column;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        &__image-wrapper {
+            display: flex;
+            max-width: 100%;
+        }
+
+        &__text {
+            padding: 50px 0;
+            margin: 0 auto;
+        }
+
+        &__citation {
+            max-width: 275px;
+        }    
     }
 }

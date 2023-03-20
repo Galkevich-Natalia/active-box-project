@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    min-height: 101px;
+    height: 101px;
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -141,6 +141,20 @@
                     height: 3px;
                     background-color: @white-text-color;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .header {
+        height: 56px;
+
+        &__logo {
+
+            img {
+                max-width: 130px;
+                height: 56px;
             }
         }
     }
