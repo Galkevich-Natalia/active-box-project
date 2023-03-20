@@ -36,7 +36,7 @@
 
         button {
             width: 369px;
-            height: 77.58px;
+            height: 78px;
             background: @coral-button-normal-color;
             font-weight: 900;
             font-size: 24px;
@@ -53,6 +53,89 @@
             &:active {
                 background: @coral-button-activ-color;
                 box-shadow: 4px 4px 30px @coral-button-activ-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .banner {
+        &__title {
+            h1 {
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+
+        &__description {
+            h3 {
+                font-size: 18px;
+                line-height: 21px;
+            }    
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .banner {
+        &__btn {
+            button {
+                width: 313px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .banner {
+        &__title {
+            h1 {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+
+        &__description {
+            h3 {
+                font-size: 14px;
+                line-height: 16px;
+            }    
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .banner {
+        &__wrapper {
+            padding: 130px 0 32px 0;
+            text-align: center;
+        }
+
+        &__btn {
+            button {
+                width: 280px;
+                height: 58px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .banner {
+
+        &__wrapper {
+            padding: 106px 0 52px 0;
+            text-align: center;
+        }
+
+        &__btn {
+            padding: 0;
+
+            button {
+                width: 100%;
             }
         }
     }

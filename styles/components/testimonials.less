@@ -1,53 +1,59 @@
 .testimonials {
 
-    .container {
-        max-width: 100%;
-    }
-
     &__slider {
-        display: flex; 
+        display: flex;
+        align-items: center;
+        max-height: 490px;
+        width: 100%;
+        background: #5c3249;
+       
     }
-
-    &__image {
-        flex: 1;
-        position: relative;
+    
+    &__image-wrapper {
+        display: flex;
+        max-width: 741px;
 
         img {
-            object-fit: cover;
-            height: 490px;
             width: 100%;
         }
     }
 
     &__text {
-        flex: 1;
-        width: 100%;
-        height: 490px;
-        padding: 116px 170px 116px 129px;
-        background-color: @eggplant-background-color;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 0 129px;
+        color: @white-text-color;
     }
-
+    
     &__citation {
+        max-width: 497px;
         padding: 17px 0;
 
         h2 {
-            font-family: 'Cardo';
+            font-family: Cardo;
             font-style: italic;
             font-weight: 400;
             font-size: 36px;
             line-height: 49px;
             color: @white-text-color;
-        }    
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+        }
     }
-
+    
     &__author {
+
+        max-width: 497px;
+        padding: 7px 0;
 
         h6 {
             font-weight: 700;
             font-size: 13px;
             line-height: 15px;
+            display: flex;
+            align-items: center;
             text-transform: uppercase;
-            color: @white-text-color;
         }
     }
 
