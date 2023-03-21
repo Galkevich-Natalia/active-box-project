@@ -17,7 +17,7 @@
             text-transform: uppercase;
             color: @white-text-color;
         }
-    }    
+    }
 
     &__description {
         padding: 16.43px 0 41px 0;
@@ -56,6 +56,12 @@
             }
         }
     }
+}
+
+.banner__title.banner__title_active,
+.banner__description.banner__description_active,
+.banner__btn.banner__btn_active {
+    opacity: 0;
 }
 
 @media screen and (max-width: 1100px) {
